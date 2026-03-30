@@ -8,5 +8,4 @@ This repository contains the recursive chunking implementation and the MTEB chun
 - `mteb/mteb_precompute_chunks.py`: precompute chunks for MTEB datasets.
 - `eval/chunking_eval.py`: evaluate precomputed chunks on MTEB datasets.
 
-## Notes
-- Scripts assume the original project dependencies and data paths are available.
+
