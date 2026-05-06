@@ -1,0 +1,31 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+
+# Embedding models / chunking
+torch>=2.0
+transformers>=4.40
+sentence-transformers>=3.0
+
+# Chunking baselines
+langchain-text-splitters>=0.2
+chonkie>=0.4
+
+# Retrieval evaluation harness
+mteb>=1.12
+datasets>=2.18
+
+# Tokenisation / language utilities
+nltk>=3.8
+
+# LLM-as-a-Judge: prompt rendering + Azure OpenAI gateway
+jinja2>=3.1
+python-dotenv>=1.0
+tenacity>=8.2
+
+# Optional: Azure OpenAI gateway used for the LLM-as-a-Judge runner. Replace
+# the line below with the gateway your environment uses, or set
+# AZURE_OPENAI_API_KEY and AZURE_OPENAI_ENDPOINT and let `run_llm_judge.py`
+# import its own client.
+# primer-micro-utils>=0.1

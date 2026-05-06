@@ -1,0 +1,31 @@
+{
+  "datasets": [
+    "SciFact",
+    "NFCorpus",
+    "FiQA2018",
+    "TRECCOVID"
+  ],
+  "embeddings": [
+    "AML12v2",
+    "ME5S",
+    "MQML6Cv1",
+    "E5Sv2"
+  ],
+  "strategies": [
+    "recur",
+    "langchain",
+    "chonkie",
+    "primer"
+  ],
+  "n_queries": {
+    "SciFact": 300,
+    "NFCorpus": 323,
+    "FiQA2018": 648,
+    "TRECCOVID": 50
+  },
+  "n_docs_llm_sample": 50,
+  "n_runs_llm": 3,
+  "llm_judge_model": "gpt-4o-mini",
+  "llm_temperature": 0.3,
+  "llm_prompt": "prompts/score_split.jinja2"
+}

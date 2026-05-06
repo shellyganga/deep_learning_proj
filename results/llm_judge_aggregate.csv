@@ -1,0 +1,17 @@
+dataset,chunking_strategy,n_docs,n_runs,split_mean,split_std,krippendorff_alpha
+FiQA2018,chonkie,50,3,1.851,0.572,0.6
+FiQA2018,langchain,50,3,2.176,0.537,0.66
+FiQA2018,primer,50,3,2.079,0.525,0.64
+FiQA2018,recur,50,3,2.191,0.521,0.65
+NFCorpus,chonkie,50,3,1.706,0.511,0.59
+NFCorpus,langchain,50,3,1.869,0.547,0.61
+NFCorpus,primer,50,3,2.16,0.52,0.67
+NFCorpus,recur,50,3,2.242,0.499,0.68
+SciFact,chonkie,50,3,1.712,0.564,0.63
+SciFact,langchain,50,3,1.982,0.504,0.66
+SciFact,primer,50,3,2.175,0.485,0.69
+SciFact,recur,50,3,2.37,0.498,0.71
+TRECCOVID,chonkie,50,3,1.963,0.518,0.62
+TRECCOVID,langchain,50,3,2.281,0.483,0.69
+TRECCOVID,primer,50,3,2.307,0.53,0.7
+TRECCOVID,recur,50,3,2.193,0.564,0.67

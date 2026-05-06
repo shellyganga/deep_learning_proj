@@ -1,0 +1,5 @@
+dataset,n_strategies,pearson_r,intrinsic_axis,extrinsic_axis
+SciFact,4,0.9706,split_mean,ndcg@10_avg_across_embeddings
+NFCorpus,4,0.8494,split_mean,ndcg@10_avg_across_embeddings
+FiQA2018,3,0.9915,split_mean,ndcg@10_avg_across_embeddings
+TRECCOVID,4,0.8249,split_mean,ndcg@10_avg_across_embeddings
