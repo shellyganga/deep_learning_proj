@@ -1,0 +1,13 @@
+dataset,chunking_strategy,avg_chunks_per_doc,avg_chunk_length_chars,std_chunk_length_chars
+SciFact,recur,1.412,952.317,468.213
+SciFact,langchain,1.587,841.624,289.451
+SciFact,chonkie,2.108,512.483,247.117
+NFCorpus,recur,1.288,876.504,512.832
+NFCorpus,langchain,1.532,757.812,302.218
+NFCorpus,chonkie,1.873,478.921,231.642
+FiQA2018,recur,0.999,768.717,738.588
+FiQA2018,langchain,1.305,587.583,316.042
+FiQA2018,chonkie,2.245,342.212,238.732
+TRECCOVID,recur,2.184,1024.511,584.726
+TRECCOVID,langchain,2.412,892.734,328.117
+TRECCOVID,chonkie,3.018,564.829,251.488

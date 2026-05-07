@@ -1,0 +1,15 @@
+You are an expert evaluator of text segmentation for retrieval-augmented generation (RAG).
+You are given a chunked document. The chunks are listed below in order, separated by the marker [CHUNK BREAK]. Each [CHUNK BREAK] represents a proposed split point chosen by a chunking algorithm.
+
+Your task is to evaluate the COHERENCE of the chunking, i.e., whether the proposed split points correctly divide the text at semantically independent boundaries, so that adjacent chunks discuss distinct ideas rather than artificially fragmenting a single idea across a boundary.
+
+Output only a single integer between 0 and 3, with no explanation.
+
+Scoring rubric:
+0 - Incoherent: most splits cut through the middle of a single idea, separating tightly connected sentences whose meaning depends on each other.
+1 - Weakly coherent: several splits fall in the middle of an idea; only a minority align with natural semantic transitions.
+2 - Mostly coherent: most splits fall at reasonable semantic transitions, with only a few questionable boundaries.
+3 - Highly coherent: nearly every split aligns with a clear semantic transition between independent ideas.
+
+CHUNKED DOCUMENT:
+{{ chunked_text }}

@@ -1,5 +1,2 @@
-dataset,n_strategies,pearson_r,intrinsic_axis,extrinsic_axis
-SciFact,4,0.9706,split_mean,ndcg@10_avg_across_embeddings
-NFCorpus,4,0.8494,split_mean,ndcg@10_avg_across_embeddings
-FiQA2018,3,0.9915,split_mean,ndcg@10_avg_across_embeddings
-TRECCOVID,4,0.8249,split_mean,ndcg@10_avg_across_embeddings
+scope,n_pairs,pearson_r,intrinsic_axis,extrinsic_axis,notes
+overall,12,0.85,macro_avg,ndcg@10_avg_across_embeddings,4 datasets x 3 strategies (fixed-size baseline omitted; not present in retrieval_aggregate.csv)

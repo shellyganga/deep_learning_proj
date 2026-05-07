@@ -1,0 +1,15 @@
+You are an expert evaluator of text segmentation for retrieval-augmented generation (RAG).
+You are given a single chunk produced by a chunking algorithm.
+
+Your task is to evaluate the RELEVANCE PURITY of the chunk, i.e., whether the content within the chunk maintains a single, consistent topic without mixing unrelated information. A high-purity chunk is topically focused; a low-purity chunk concatenates content about multiple distinct topics, which weakens its embedding and harms retrieval precision.
+
+Output only a single integer between 0 and 3, with no explanation.
+
+Scoring rubric:
+0 - Impure: the chunk mixes two or more unrelated topics with no shared thread.
+1 - Weakly pure: the chunk's content is loosely related but spans multiple distinct subtopics that would be better separated.
+2 - Mostly pure: the chunk is largely focused on one topic, with minor topical drift.
+3 - Highly pure: the chunk maintains a single, consistent topic throughout.
+
+CHUNK:
+{{ chunk }}

@@ -2,16 +2,12 @@ dataset,chunking_strategy,redundancy_rate,threshold_cosine
 SciFact,recur,0.041,0.9
 SciFact,langchain,0.0645,0.9
 SciFact,chonkie,0.1806,0.9
-SciFact,primer,0.1325,0.9
 NFCorpus,recur,0.0387,0.9
 NFCorpus,langchain,0.058,0.9
 NFCorpus,chonkie,0.1823,0.9
-NFCorpus,primer,0.1437,0.9
 FiQA2018,recur,0.0385,0.9
 FiQA2018,langchain,0.0599,0.9
 FiQA2018,chonkie,0.1844,0.9
-FiQA2018,primer,0.1388,0.9
 TRECCOVID,recur,0.0415,0.9
 TRECCOVID,langchain,0.0583,0.9
 TRECCOVID,chonkie,0.1819,0.9
-TRECCOVID,primer,0.1405,0.9

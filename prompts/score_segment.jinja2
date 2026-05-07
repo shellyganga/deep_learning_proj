@@ -1,0 +1,8 @@
+You are an expert in judging a chunking of a text for purposes of RAG.  You examine a text and assess whether it is uniform and compact enough to be a single chunk (represented by a single embedding), or the text can be split into two or more chunks, each with its own embedding.
+You output only a single score which is a number between 0 and 3.
+0 - No split needed: The text is the best as a single chunk.
+1 - Possible, but not necessary: The text is good as it is, but it is slightly non-uniform in semantics and has some topic diversity, so it could be split into two or more chunks.
+2 - Possible good split: It is better to split the text into two or more chunks, their embeddings would be better for RAG than the embedding of the whole text.
+3 - Split is necessary: The text covers too diverse topics. It should be split into two or more chunks, their embeddings will be certainly better than the embedding of the text.
+
+{{ text }}

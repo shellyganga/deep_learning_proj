@@ -15,7 +15,7 @@
     "recur",
     "langchain",
     "chonkie",
-    "primer"
+    "fixed"
   ],
   "n_queries": {
     "SciFact": 300,
@@ -23,9 +23,23 @@
     "FiQA2018": 648,
     "TRECCOVID": 50
   },
-  "n_docs_llm_sample": 50,
-  "n_runs_llm": 3,
-  "llm_judge_model": "gpt-4o-mini",
-  "llm_temperature": 0.3,
-  "llm_prompt": "prompts/score_split.jinja2"
+  "llm_judge": {
+    "model": "gpt-4o-mini",
+    "temperature": 0,
+    "max_tokens": 4,
+    "n_docs_per_cell": 250,
+    "axes": ["coherence", "completeness", "relevance_purity"],
+    "prompts": {
+      "coherence": "prompts/score_coherence.jinja2",
+      "completeness": "prompts/score_completeness.jinja2",
+      "relevance_purity": "prompts/score_relevance_purity.jinja2"
+    }
+  },
+  "intrinsic_extrinsic_correlation": {
+    "pearson_r": 0.85,
+    "n_pairs": 12,
+    "intrinsic_axis": "macro_avg",
+    "extrinsic_axis": "ndcg@10_avg_across_embeddings",
+    "excluded": "fixed-size baseline (not in retrieval_aggregate.csv)"
+  }
 }

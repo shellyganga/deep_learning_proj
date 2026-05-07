@@ -1,0 +1,15 @@
+You are an expert evaluator of text segmentation for retrieval-augmented generation (RAG).
+You are given a single chunk produced by a chunking algorithm. The chunk is intended to be retrieved and read in isolation, without access to surrounding chunks.
+
+Your task is to evaluate the COMPLETENESS of the chunk, i.e., whether the chunk forms a self-contained, contextually complete unit that can be understood on its own, with the entities, claims, and references it introduces resolved within the chunk.
+
+Output only a single integer between 0 and 3, with no explanation.
+
+Scoring rubric:
+0 - Severely incomplete: the chunk relies heavily on missing context (dangling pronouns, undefined entities, references to material that is not in the chunk) and cannot stand alone.
+1 - Partially incomplete: the chunk introduces several references or claims whose meaning depends on text outside the chunk.
+2 - Mostly complete: the chunk is largely self-contained, with only minor unresolved references that a reader could infer.
+3 - Fully complete: the chunk is fully self-contained; every introduced entity, claim, and reference is resolved within the chunk itself.
+
+CHUNK:
+{{ chunk }}

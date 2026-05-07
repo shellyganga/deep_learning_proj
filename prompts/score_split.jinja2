@@ -1,0 +1,17 @@
+You are an expert text segmentation evaluator.
+You are given a piece of text, split into two parts: PART 1 and PART 2.
+Evaluate how optimally the split location was chosen, i.e., how much the two parts are logically and semantically independent.
+
+Output only a single digit between 0 and 3 with no explanation.
+
+Scoring rubric:
+0 - Very not optimal: a split almost anywhere would result in the same or better separation.
+1 - Poorly optimal: many other places would yield better separation.
+2 - Moderately optimal: only a few other places would yield better separation.
+3 - Highly optimal: almost no other place would yield better separation.
+
+PART 1:
+{{ part1 }}
+
+PART 2:
+{{ part2 }}
